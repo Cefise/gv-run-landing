@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bem-vindo ao Programa GV Run</title>
+<style>
+  :root{
+    --navy:#0A1730; --navy2:#101F3C; --deep:#16305E; --blue:#2E6FDB; --sky:#57A0FF;
+    --ice:#EAF2FF; --mut:#8FA6C9; --card:#13223F; --line:rgba(87,160,255,.2);
+    --green:#2FA36B;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(160deg,#0A1730,#101F3C 55%,#16305E);
+    color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;
+    padding:24px;line-height:1.6;
+  }
+  .card{
+    max-width:560px;width:100%;background:rgba(255,255,255,.04);
+    border:1px solid var(--line);border-radius:24px;padding:44px 36px;
+    box-shadow:0 30px 70px rgba(0,0,0,.4);position:relative;overflow:hidden;
+  }
+  .card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:6px;
+    background:linear-gradient(90deg,var(--blue),var(--sky));
+  }
+  .check{
+    width:72px;height:72px;border-radius:50%;background:var(--green);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 24px;
+    font-size:40px;box-shadow:0 8px 24px rgba(47,163,107,.4);
+  }
+  .eyebrow{
+    text-align:center;font-size:12px;font-weight:800;letter-spacing:3px;
+    text-transform:uppercase;color:var(--sky);margin-bottom:10px;
+  }
+  h1{
+    text-align:center;font-size:28px;font-weight:800;letter-spacing:-.02em;
+    margin-bottom:14px;line-height:1.2;
+  }
+  .sub{text-align:center;color:var(--ice);font-size:16px;margin-bottom:32px}
+  .access{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:26px 24px;margin-bottom:24px;
+  }
+  .access .label{
+    font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+    color:var(--sky);margin-bottom:6px;
+  }
+  .access .val{font-size:15px;color:#fff;margin-bottom:20px;word-break:break-all}
+  .access .val:last-child{margin-bottom:0}
+  .senha{
+    display:inline-block;background:rgba(87,160,255,.15);border:1px dashed var(--sky);
+    border-radius:8px;padding:8px 16px;font-family:'Courier New',monospace;
+    font-size:20px;font-weight:800;color:var(--sky);letter-spacing:2px;
+  }
+  .btn{
+    display:block;width:100%;text-align:center;background:linear-gradient(92deg,var(--blue),var(--sky));
+    color:#fff;font-weight:800;font-size:18px;padding:18px;border-radius:14px;
+    text-decoration:none;box-shadow:0 12px 30px rgba(46,111,219,.4);
+    transition:transform .15s ease;margin-bottom:24px;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .steps{background:rgba(255,255,255,.03);border-radius:14px;padding:22px 24px;margin-bottom:24px}
+  .steps h3{font-size:15px;margin-bottom:14px;color:#fff}
+  .steps ol{margin:0;padding-left:20px}
+  .steps li{font-size:14px;color:var(--ice);margin-bottom:8px}
+  .steps li:last-child{margin-bottom:0}
+  .footer{text-align:center;font-size:13px;color:var(--mut);border-top:1px solid var(--line);padding-top:20px}
+  .footer a{color:var(--sky);font-weight:700;text-decoration:none}
+  .tagline{text-align:center;font-size:15px;font-weight:800;color:var(--sky);margin-top:8px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="check">✓</div>
+    <div class="eyebrow">Compra confirmada</div>
+    <h1>Bem-vindo ao Programa GV Run! 🏃</h1>
+    <p class="sub">Seu acesso está liberado. Vamos começar a correr sem dor.</p>
+
+    <div class="access">
+      <div class="label">Seu app</div>
+      <div class="val">Acesse pelo botão abaixo e comece pela avaliação inicial.</div>
+      <div class="label">Senha de acesso</div>
+      <div class="val"><span class="senha">GVRUN2025</span></div>
+    </div>
+
+    <a class="btn" href="https://gv-run-app.vercel.app" target="_blank" rel="noopener">Acessar meu app →</a>
+
+    <div class="steps">
+      <h3>Seus primeiros passos:</h3>
+      <ol>
+        <li>Abra o app e digite a senha acima</li>
+        <li>Faça a <b>avaliação inicial</b> — ela define seu nível e monta seu programa</li>
+        <li>Comece a <b>semana 1</b> no seu ritmo</li>
+        <li>Registre a dor diariamente no semáforo</li>
+      </ol>
+    </div>
+
+    <div class="footer">
+      Dúvidas? Chama a gente no direct:<br>
+      <a href="https://instagram.com/vyni.fisio" target="_blank" rel="noopener">@vyni.fisio</a> ·
+      <a href="https://instagram.com/guicarlii" target="_blank" rel="noopener">@guicarlii</a>
+      <div class="tagline">Corra sem dor.</div>
+    </div>
+  </div>
+</body>
+</html>
